@@ -20,7 +20,7 @@ One sitting each, in this order.
 
 | # | Reading | Length | Look for |
 |---|---|---|---|
-| 1 | ★ Fay Dowker, "Past, Present and Future: The Science of Time" (talk), https://www.youtube.com/watch?v=LAFymPdAg5I | one talk | The whole picture, before any detail. *Not opened by Claude: nothing from it is below, so take your own notes.* |
+| 1 | ★ Fay Dowker, "Past, Present and Future: The Science of Time" (talk), https://www.youtube.com/watch?v=LAFymPdAg5I | one talk | The whole picture, before any detail. Done 26 Nov; facts below come from its auto-generated transcript, with timestamps. |
 | 2 | Fay Dowker, "The birth of spacetime atoms as the passage of time" (2014), https://arxiv.org/abs/1405.3492 | short paper | Questions 2, 3 and 4. The core of the entry. |
 | 3 | Fay Dowker, "Causal sets and the deep structure of spacetime" (2005), https://arxiv.org/abs/gr-qc/0508109, §1 to §3.4 | sections | What a causal set is, and "the problem of Now". |
 | 4 | Ellis & Rothman, "Time and Spacetime: The Crystallizing Block Universe" (2010), https://arxiv.org/abs/0912.0808, §1 to §4 | sections | A second, non-causal-set view where the future is open. |
@@ -29,6 +29,26 @@ One sitting each, in this order.
 | + | Optional: Rideout & Sorkin (1999), Krioukov et al. (2012), Ahmed et al. (2004) | dip in | The growth rules; an image; the one testable prediction. |
 
 ## Facts
+
+### From Dowker's talk (chunk 1)
+
+Timestamps are from the YouTube video. The transcript is machine-made and garbles names and numbers; the names below are corrected.
+
+- **The question (18:31).** Does time physically pass, or is passage only how we experience it? Dowker calls it a current debate with no consensus.
+- **C, the two sides (19:11 to 22:24).** Paul Davies: the flow of time is an illusion, a matter of psychology. John Norton: time really passes, independently of us. Dowker names the sides *being* (Parmenides) and *becoming* (the Buddhist doctrine of dependent origination, quoted from Stcherbatsky's *Buddhist Logic*).
+- **The majority view (22:59).** In her own, admittedly anecdotal, experience most physicists and philosophers side with being: past, present and future are equally real. Sean Carroll's description of the universe as one four-dimensional thing is her example (24:20).
+- **E, Newton's picture (26:07 to 35:10).** Snapshots of three-dimensional space, stacked in time order, make a four-dimensional block. One global time ticks the same for everything, so far-apart events can be simultaneous. This is what made Harrison's clock solve the longitude problem (11:11 to 17:49).
+- **E, Einstein's picture (35:22 to 41:53).** Spacetime is made of point events, the limit of ever smaller and briefer fireworks. There is no three-dimensional space, no global time and no simultaneity. Time elapses only along world lines, and differently along different ones.
+- **The image (44:02 to 46:15).** It feels as if a lit spot moves up my world line, marking now. General relativity has no such spots, and could not: there is no way to say where your spot is when mine is here.
+- **C (46:31 to 48:24).** Whether the block holds events *happening* or only events *having happened* cannot be settled within general relativity. Dowker sides with becoming: time passes, and it is a physical process that general relativity does not do justice to.
+- **C, the growing block (49:04).** What is called for is a growing block: the past fixed and real, the future yet to happen. The idea is associated with C. D. Broad.
+- **E, why quantum gravity (50:05 to 51:22).** General relativity assumes matter behaves deterministically; quantum matter does not, and nobody knows how it gravitates.
+- **C, causal sets (51:39 to 57:53).** Spacetime is atomic. The atoms are held together by causal order: some are before others, and some are unordered. Our observable universe would need roughly 10²⁴⁰ of them. The idea was proposed independently by 't Hooft, by Myrheim, and by Bombelli, Lee, Meyer and Sorkin, and championed by Sorkin.
+- **C, asynchronous becoming (57:22 to 59:46).** The atoms are born in a continual random process, in an order that is only partial. Two things are physically real: the atoms with their order, and the birth process. The occurrence of an event is the birth of its atoms.
+- **Her summary (59:54).** Newton's time is about space, Einstein's about events, and the physics she hopes for is about process.
+- **Stcherbatsky again (1:00:25).** The Buddhist philosophers held that causal laws hold the flashes of becoming together. Her moral: draw on all of human thought, not one tradition.
+- **C, what is missing (Q&A, 1:06:53).** So far there is only a classical model of the growth. A quantum one that respects relativistic causality while allowing Bell-inequality violations has not been found.
+- **C, direction (Q&A, 1:11:17).** Becoming has a built-in direction: the past exists and the future is open. Yet the finished spacetime could still look the same run backwards. The arrow of time and the direction of becoming are separate questions.
 
 ### What a spacetime atom is (question 3)
 
@@ -75,6 +95,10 @@ One sitting each, in this order.
 
 Answer from memory after each chunk, then open the answer.
 
+<details><summary>Chunk 1: What two words does Dowker pin to the two sides, and who stands on each?</summary>Being (Parmenides, Paul Davies) and becoming (Buddhist dependent origination, John Norton). (Talk, 21:12)</details>
+<details><summary>What is Newton's spacetime made of, and Einstein's?</summary>Newton's: stacked snapshots of space, with one global time. Einstein's: point events, with time only along world lines. (Talk, 26:07 and 35:22)</details>
+<details><summary>Why can general relativity have no "lit spot" marking now?</summary>There would be no way to coordinate one spot on my world line with yours. (Talk, 45:44)</details>
+<details><summary>In asynchronous becoming, what two things are physically real?</summary>The spacetime atoms with their order, and the process of their birth. (Talk, 58:08)</details>
 <details><summary>Chunk 2 and 3: What three properties make a set of elements a causal set?</summary>Transitive, never circular, locally finite. (Dowker 2005, §2.1)</details>
 <details><summary>What two things together give geometry in causal set theory?</summary>Order (causal structure) and number (counting gives volume). (Dowker 2005, §2.3)</details>
 <details><summary>What does Dowker identify with the passage of time?</summary>The birth of spacetime atoms: the present is the process of birth. (Dowker 2014)</details>
@@ -94,7 +118,8 @@ Answer from memory after each chunk, then open the answer.
 
 ## Not yet verified, and corrections
 
-- **Dowker's talk** was not opened by Claude. Facts from it need your own notes.
+- **Dowker's talk** was read through its machine transcript. Check any line you quote against the video.
+- **Stcherbatsky and Broad:** the talk quotes Stcherbatsky's *Buddhist Logic* and names C. D. Broad's growing block. Neither book has been opened.
 - **Past-infinite causal sets:** I said earlier that some models allow a past going back forever. No Source opened so far says so. Leave it out unless one turns up.
 - **Mass and the Higgs:** the PDG review shows the Higgs field taking its value as the universe cools, but does not state in so many words that this gives particles their mass. Most of the mass of protons and neutrons comes from the strong force, not the Higgs, which matters for "matter begins with mass". Both need a Source before they go in the entry (for example the PDG's Higgs review).
 - **Timing:** I earlier said "about a trillionth of a second". Worked from the PDG formula it is nearer twenty-five trillionths (2.5 × 10⁻¹¹ s).
@@ -103,6 +128,7 @@ Answer from memory after each chunk, then open the answer.
 
 ## Sources
 
+0. Fay Dowker, "Past, Present and Future: The Science of Time", public lecture, University of Geneva (2018), https://www.youtube.com/watch?v=LAFymPdAg5I. Read through its transcript.
 1. Fay Dowker, "The birth of spacetime atoms as the passage of time", *Annals of the New York Academy of Sciences* (2014), arXiv:1405.3492. Read in full (HTML).
 2. Fay Dowker, "Causal sets and the deep structure of spacetime" (2005), arXiv:gr-qc/0508109. Read §1 to §3.4.
 3. David Rideout and Rafael Sorkin, "A classical sequential growth dynamics for causal sets", *Phys. Rev. D* 61, 024002 (2000), arXiv:gr-qc/9904062. Read §1 to §3.

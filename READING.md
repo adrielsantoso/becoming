@@ -14,7 +14,7 @@ Path so far: pantheism → panentheism → process → growing block.
 
 ## 1. Time and becoming
 
-- [ ] ★ **Fay Dowker, "Past, Present and Future: The Science of Time"** (talk). Causal sets and whether becoming is real. https://www.youtube.com/watch?v=LAFymPdAg5I
+- [x] ★ **Fay Dowker, "Past, Present and Future: The Science of Time"** (talk). Causal sets and whether becoming is real. https://www.youtube.com/watch?v=LAFymPdAg5I
 - [ ] **Crystallizing block universe**: Ellis & Rothman, "Time and Spacetime: The Crystallizing Block Universe" (paper, 2010). Growing block with quantum outcomes as its edge.
 - [ ] **George Ellis, *How Can Physics Underlie the Mind?*** (book, 2016). Top-down causation: how higher tiers act back on lower ones.
 - [ ] **Lee Smolin, *Time Reborn*** (book, 2013), then **Unger & Smolin, *The Singular Universe and the Reality of Time*** (2014). Time is real; even the laws may evolve.
