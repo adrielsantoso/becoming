@@ -6,7 +6,7 @@ One entry for each tier, written bottom up, then the Open questions page brought
 
 | # | Entry | Status |
 |---|---|---|
-| 1 | Α | not written yet |
+| 1 | Α | studying: [fact sheet](study/alpha/facts.md) |
 | 2 | Matter | not written yet |
 | 3 | Life | not written yet |
 | 4 | Mind | not written yet |

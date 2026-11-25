@@ -5,7 +5,8 @@ A public site that tells the universe's story tier by tier, from Α to Ω. Read 
 ## Who does what
 
 - **The owner writes every entry.** Never write or rewrite an entry's prose, even when asked to "fix" it; point out the problem and suggest, and let the owner write.
-- **Claude supplies:** cited fact sheets for an entry, fact-checks of drafts, diagrams, and the site, CI and checks.
+- **Claude supplies:** cited fact sheets and flashcards for an entry, fact-checks of drafts, diagrams, and the site, CI and checks.
+- **Each entry is studied before it is written,** following [STUDY.md](STUDY.md). When fact-checking a draft, mark where it is wrong or thin and point to the fact sheet; never rewrite it.
 - Ask before changing `GLOSSARY.md`, the seven parts of an entry, the open questions' numbering, or the licences.
 
 ## Rules that must not break
@@ -20,6 +21,10 @@ A public site that tells the universe's story tier by tier, from Α to Ω. Read 
 ## Entries
 
 `src/content/entries/<tier>.md`, with `status` set to `idea`, `draft` (only `npm run dev` shows it) or `published` (needs a `published` date). Publishing an entry also means updating the "Moved by" list in `QUESTIONS.md` and the table in `ROADMAP.md`.
+
+## Study files
+
+`study/<tier>/facts.md` (the fact sheet) and `study/<tier>/cards.tsv` (flashcards, `front<TAB>back`, for Anki). A fact sheet lists only Sources that were actually opened, says where in each Source a fact is, marks each fact E (Established) or C (Contested), and keeps a "Not yet verified" list.
 
 ## Commands
 

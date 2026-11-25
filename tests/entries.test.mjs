@@ -63,9 +63,22 @@ test("no em dashes in the writing", () => {
   const files = [
     ...readdirSync(ROOT).filter((f) => f.endsWith(".md")),
     ...readdirSync(DIR).map((f) => join("src/content/entries", f)),
+    ...readdirSync(join(ROOT, "study"), { recursive: true })
+      .filter((f) => f.endsWith(".md"))
+      .map((f) => join("study", f)),
   ];
   for (const f of files) {
     assert.ok(!readFileSync(join(ROOT, f), "utf8").includes("—"), `em dash in ${f}`);
+  }
+});
+
+test("every flashcard has a front and a back", () => {
+  const files = readdirSync(join(ROOT, "study"), { recursive: true }).filter((f) => f.endsWith(".tsv"));
+  for (const f of files) {
+    readFileSync(join(ROOT, "study", f), "utf8")
+      .split("\n")
+      .filter(Boolean)
+      .forEach((line, i) => assert.equal(line.split("\t").length, 2, `${f}:${i + 1}`));
   }
 });
 
