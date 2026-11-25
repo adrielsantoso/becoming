@@ -1,0 +1,39 @@
+---
+import { render } from "astro:content";
+import Base from "../layouts/Base.astro";
+import { ladder, shown, url, type Entry } from "../lib/entries";
+
+export async function getStaticPaths() {
+  const all = await ladder();
+  return all.filter(shown).map((entry) => {
+    const near = (o: number) => all.find((e) => e.data.order === o && shown(e));
+    return {
+      params: { tier: entry.id },
+      props: { entry, below: near(entry.data.order - 1), above: near(entry.data.order + 1) },
+    };
+  });
+}
+
+interface Props { entry: Entry; below?: Entry; above?: Entry }
+const { entry, below, above } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+---
+<Base title={d.name} description={d.line}>
+  <article class="entry prose">
+    <header>
+      <p class="tier">Tier {d.order} of 6</p>
+      <h1>{d.title === d.name ? d.name : `${d.title} · ${d.name}`}</h1>
+      <p class="lede">
+        {d.line}
+        {d.published && <> · <time datetime={d.published.toISOString().slice(0, 10)}>{d.published.toISOString().slice(0, 10)}</time></>}
+        {d.status === "draft" && <span class="status">draft</span>}
+      </p>
+    </header>
+    <Content />
+    <nav class="near" aria-label="Neighbouring tiers">
+      {below ? <a href={url(`${below.id}/`)}>↓ {below.data.name}</a> : <span />}
+      {above ? <a href={url(`${above.id}/`)}>{above.data.name} ↑</a> : <span />}
+    </nav>
+  </article>
+</Base>

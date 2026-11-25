@@ -1,0 +1,33 @@
+/* Design tokens, taken from Magnes. Every colour, font and size on the site
+   comes from here. Cyan marks links, pink marks Contested claims, and gold
+   marks the Stance. Gold is the only yellow. */
+
+:root {
+  /* surfaces */
+  --bg: #121e20;
+  --slot: #0d1517;
+  --panel: #1c2c2f;
+  --line: #314548;
+
+  /* text */
+  --fg: #e6e2d3;
+  --muted: #abbfc1;
+
+  /* accents */
+  --cyan: #3fe6ec;
+  --gold: #f2c14e; /* the one yellow */
+  --pink: #f472b6;
+
+  /* type: self-hosted through @fontsource, never a third-party font server */
+  --display: "Silkscreen", "IBM Plex Mono", ui-monospace, monospace;
+  --body: "IBM Plex Sans", system-ui, -apple-system, sans-serif;
+  --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* space */
+  --gutter: 16px;
+  --gap: 12px;
+  --measure: 68ch;
+  --radius: 0; /* pixel art has square corners */
+
+  color-scheme: dark;
+}

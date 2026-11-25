@@ -1,0 +1,14 @@
+# One pull request per ecosystem per month, so updates arrive as a small batch.
+version: 2
+updates:
+  - package-ecosystem: npm
+    directory: /
+    schedule: { interval: monthly }
+    groups:
+      site: { patterns: ["*"] }
+
+  - package-ecosystem: github-actions
+    directory: /
+    schedule: { interval: monthly }
+    groups:
+      actions: { patterns: ["*"] }

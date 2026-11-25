@@ -1,0 +1,62 @@
+name: ci
+
+# Pushes run on main only; branches are checked through their pull request,
+# so each change runs CI once.
+on:
+  push:
+    branches: [main]
+  pull_request:
+  # Weekly, so a vulnerability found in a locked dependency shows up even in
+  # a week with no pushes.
+  schedule:
+    - cron: "0 6 * * 1"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with: { node-version: 22, cache: npm }
+      - run: npm ci
+      - run: npm test
+      - run: npm run build
+      # Only a push to main publishes; the built site goes to the deploy job.
+      - if: github.event_name == 'push'
+        uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
+        with: { path: dist }
+
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      # A tag can be moved to other code; a commit SHA cannot.
+      - name: Every Action is pinned to a commit SHA
+        run: |
+          if grep -rnE '^\s*(- )?uses:' .github/workflows | grep -vE 'uses: [^ ]+@[0-9a-f]{40}( |$)'; then
+            echo "pin the Actions above to a full commit SHA"; exit 1
+          fi
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with: { node-version: 22 }
+      - run: npm audit --audit-level=high
+
+  deploy:
+    if: github.event_name == 'push'
+    needs: [check, audit]
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346 # v5.0.1

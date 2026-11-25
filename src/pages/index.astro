@@ -1,0 +1,43 @@
+---
+import Base from "../layouts/Base.astro";
+import { ladder, shown, url } from "../lib/entries";
+
+const rungs = (await ladder()).reverse();
+const label = (e: (typeof rungs)[number]) =>
+  e.data.title === e.data.name ? e.data.name : `${e.data.title} · ${e.data.name}`;
+const written = rungs.filter((e) => e.data.status === "published").length;
+---
+<Base>
+  <h1>Becoming</h1>
+  <p class="lede">
+    The universe is still being made. This is its story told one tier at a time, from Α (Alpha), where spacetime
+    grows, to Ω (Omega), everything after culture. Each claim cites a Source; what is contested is marked; my own
+    reading comes last, set apart.
+  </p>
+  <ol class="ladder" reversed aria-label={`The ladder: ${written} of 6 written`}>
+    {rungs.map((e, i) => {
+      const live = shown(e);
+      const lit = e.data.status === "published";
+      const classes = [
+        "rung",
+        lit ? "lit" : "dim",
+        e.data.openEnded && "open",
+        e.data.openEnded && (i === 0 ? "top-end" : "bottom-end"),
+      ];
+      return (
+        <li class:list={classes}>
+          <span class="glyph" aria-hidden="true">{e.data.order}</span>
+          {live ? <a class="name" href={url(`${e.id}/`)}>{label(e)}</a> : <span class="name">{label(e)}</span>}
+          <span class="line">
+            {e.data.line} <span class="state">{lit ? "" : `· ${e.data.status === "draft" ? "draft" : "not written yet"}`}</span>
+          </span>
+        </li>
+      );
+    })}
+  </ol>
+  <p class="legend">
+    <span>Plain text: Established</span>
+    <span class="c">Pink: Contested</span>
+    <span class="s">Gold: Stance</span>
+  </p>
+</Base>

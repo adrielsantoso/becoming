@@ -1,0 +1,50 @@
+---
+import "@fontsource/silkscreen/400.css";
+import "@fontsource/ibm-plex-sans/400.css";
+import "@fontsource/ibm-plex-sans/600.css";
+import "@fontsource/ibm-plex-mono/400.css";
+import "../styles/global.css";
+import { url } from "../lib/entries";
+
+interface Props { title?: string; description?: string; current?: string }
+const { title, description = "The universe becoming, told tier by tier from Α to Ω, grounded in what we know.", current } = Astro.props;
+const full = title ? `${title} · Becoming` : "Becoming";
+const nav = [
+  ["questions/", "Open questions"],
+  ["reading/", "Reading"],
+  ["about/", "About"],
+];
+// The site loads nothing from anywhere else. The dev server needs its own
+// scripts, so the policy is only set on the built site.
+const csp =
+  "default-src 'none'; style-src 'self'; font-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'";
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    {import.meta.env.PROD && <meta http-equiv="Content-Security-Policy" content={csp} />}
+    <meta name="referrer" content="no-referrer" />
+    <title>{full}</title>
+    <meta name="description" content={description} />
+    <link rel="alternate" type="application/rss+xml" title="Becoming" href={url("rss.xml")} />
+    <link rel="icon" href={url("favicon.svg")} type="image/svg+xml" />
+  </head>
+  <body>
+    <div class="site">
+      <nav class="top" aria-label="Site">
+        <a class="home" href={url()}>Becoming</a>
+        {nav.map(([path, label]) => (
+          <a href={url(path)} aria-current={current === path ? "page" : undefined}>{label}</a>
+        ))}
+        <a href={url("rss.xml")}>RSS</a>
+      </nav>
+      <main><slot /></main>
+      <footer class="foot">
+        Writing under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Code under MIT.
+        <a href="https://github.com/adrielsantoso/becoming">Source</a>.
+      </footer>
+    </div>
+  </body>
+</html>
