@@ -77,7 +77,7 @@ test("every flashcard has a front and a back", () => {
   for (const f of files) {
     readFileSync(join(ROOT, "study", f), "utf8")
       .split("\n")
-      .filter(Boolean)
+      .filter((line) => line && !line.startsWith("#"))
       .forEach((line, i) => assert.equal(line.split("\t").length, 2, `${f}:${i + 1}`));
   }
 });

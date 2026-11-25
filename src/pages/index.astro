@@ -5,6 +5,9 @@ import { ladder, shown, url } from "../lib/entries";
 const rungs = (await ladder()).reverse();
 const label = (e: (typeof rungs)[number]) =>
   e.data.title === e.data.name ? e.data.name : `${e.data.title} · ${e.data.name}`;
+const first = rungs.find((e) => e.data.order === 1)!;
+// The ladder reads top down but grows bottom up, so point readers to Α.
+const start = shown(first) ? url(`${first.id}/`) : `#${first.id}`;
 const written = rungs.filter((e) => e.data.status === "published").length;
 ---
 <Base>
@@ -14,6 +17,7 @@ const written = rungs.filter((e) => e.data.status === "published").length;
     grows, to Ω (Omega), everything after culture. Each claim cites a Source; what is contested is marked; my own
     reading comes last, set apart.
   </p>
+  <p class="start"><a href={start}>Start at the bottom, with Α (Alpha) ↓</a></p>
   <ol class="ladder" reversed aria-label={`The ladder: ${written} of 6 written`}>
     {rungs.map((e, i) => {
       const live = shown(e);
@@ -25,7 +29,7 @@ const written = rungs.filter((e) => e.data.status === "published").length;
         e.data.openEnded && (i === 0 ? "top-end" : "bottom-end"),
       ];
       return (
-        <li class:list={classes}>
+        <li class:list={classes} id={e.id}>
           <span class="glyph" aria-hidden="true">{e.data.order}</span>
           {live ? <a class="name" href={url(`${e.id}/`)}>{label(e)}</a> : <span class="name">{label(e)}</span>}
           <span class="line">

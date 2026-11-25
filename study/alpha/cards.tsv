@@ -1,3 +1,7 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:Becoming::Alpha
 What is a causal set?	A set of discrete elements with a partial order that is transitive, never circular and locally finite (Dowker 2005, §2.1).
 In causal set theory, what gives volume?	Counting elements: number gives volume, order gives causal structure (Dowker 2005, §2.3).
 At what scale is spacetime proposed to be discrete?	Of the order of the Planck scale (Dowker 2005, §2.3).

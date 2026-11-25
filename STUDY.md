@@ -15,7 +15,7 @@ Each month's entry is studied before it is written, using seven learning techniq
 ## Files
 
 - `study/<tier>/facts.md`: the fact sheet. Chunks, questions, cited facts marked Established or Contested, recall questions, connections, and anything not yet verified.
-- `study/<tier>/cards.tsv`: flashcards, one per line as `front<TAB>back`. In Anki: File, Import, with "Fields separated by: Tab".
+- `study/<tier>/cards.tsv`: flashcards, one per line as `front<TAB>back`. Its first lines tell Anki the separator, the note type and the deck (`Becoming::<Tier>`), so importing needs no settings: open the file with Anki, or use File, Import, then press Import. When importing a newer version, set "Existing notes" to Update so cards with the same front are updated, not duplicated.
 
 ## A month, roughly
 
