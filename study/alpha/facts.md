@@ -109,6 +109,20 @@ What it is, in two or three plain sentences.
 *One source:* a short, trusted introduction, actually opened.
 -->
 
+## To watch
+
+Papers that bear on Α but are not chunks yet. Each says why it waits and what would make it a chunk.
+
+### Chandrasekaran, "An algebraic quantization of gravity from the null cone" (2026)
+
+Venkatesa Chandrasekaran, arXiv:2611.34924, posted 25 Nov 2026. Sole author, 54 pages plus appendices. Read: the abstract only (26 Nov 2026).
+
+- **Claims, per its abstract:** a quantization of vacuum general relativity with no fixed background, built by solving the gravitational constraints on intersecting null cones (light cones). It reports a finite amplitude for graviton pair creation where the usual expansion diverges, a finite-dimensional Hilbert space for a causal diamond of a given size, the Bekenstein-Hawking entropy with a known one-loop correction, and Einstein's equations as the low-energy limit.
+- **Why it bears on Α:** it builds quantum gravity on light-cone (causal) structure, as causal sets do, and its finite causal diamond is a continuum route to "a region holds finitely many states". Material for Contested, once it is checked.
+- **Link to Höhn:** Höhn's "Gravitational entropy is observer-dependent" (arXiv:2405.00114) names Chandrasekaran's earlier work (arXiv:2206.10780) in its abstract and shows it is equivalent to a quantum reference frame description.
+- **Why it waits:** not peer-reviewed; covers gravity alone, with no matter and no cosmology, so it says nothing yet about how Α begins; news coverage says it was developed with OpenAI's GPT-6 Astra, without saying which steps the model did.
+- **Make it a chunk when:** experts have responded in public or it is published, and the background (constrained systems, algebras of observables) is in the Detours.
+
 ## Connections
 
 - **Down:** Α is open-ended; whether there is an Alpha Point is open question 6. The growth models start from a first element "0", which supports one, but that is a choice of model.
