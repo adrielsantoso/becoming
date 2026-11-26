@@ -5,9 +5,9 @@ The universe becoming, told tier by tier from Α to Ω, grounded in what we know
 - [ROADMAP.md](ROADMAP.md): the first milestone, the ladder, and what comes after.
 - [GLOSSARY.md](GLOSSARY.md): the words the project uses.
 - [QUESTIONS.md](QUESTIONS.md) and [READING.md](READING.md): the open questions and the reading list.
-- [STUDY.md](STUDY.md): how each entry is studied before it is written.
+- [STUDY.md](STUDY.md): how entries are read for, written and revised.
 - `src/content/entries/`: one Markdown file for each tier.
-- `study/`: fact sheets and flashcards, one folder per tier.
+- `study/`: fact sheets, one folder per tier.
 
 ## Commands
 

@@ -13,13 +13,17 @@ const entries = defineCollection({
       line: z.string(),
       openEnded: z.boolean().default(false),
       // idea: not written yet. draft: shown only by `npm run dev`.
-      // published: on the site.
+      // published: on the site. Entries grow: `updated` records the latest revision.
       status: z.enum(["idea", "draft", "published"]),
       published: z.coerce.date().optional(),
+      updated: z.coerce.date().optional(),
       readings: z.array(z.string()).default([]),
     })
     .refine((e) => e.status !== "published" || e.published, {
       message: "a published entry needs its published date",
+    })
+    .refine((e) => !e.updated || (e.published && e.updated >= e.published), {
+      message: "updated must be on or after published",
     }),
 });
 

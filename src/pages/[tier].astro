@@ -18,6 +18,7 @@ interface Props { entry: Entry; below?: Entry; above?: Entry }
 const { entry, below, above } = Astro.props;
 const { Content } = await render(entry);
 const d = entry.data;
+const day = (t: Date) => t.toISOString().slice(0, 10);
 ---
 <Base title={d.name} description={d.line}>
   <article class="entry prose">
@@ -26,7 +27,8 @@ const d = entry.data;
       <h1>{d.title === d.name ? d.name : `${d.title} · ${d.name}`}</h1>
       <p class="lede">
         {d.line}
-        {d.published && <> · <time datetime={d.published.toISOString().slice(0, 10)}>{d.published.toISOString().slice(0, 10)}</time></>}
+        {d.published && <> · first published <time datetime={day(d.published)}>{day(d.published)}</time></>}
+        {d.updated && <> · updated <time datetime={day(d.updated)}>{day(d.updated)}</time></>}
         {d.status === "draft" && <span class="status">draft</span>}
       </p>
     </header>

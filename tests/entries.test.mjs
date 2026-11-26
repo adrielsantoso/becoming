@@ -72,16 +72,6 @@ test("no em dashes in the writing", () => {
   }
 });
 
-test("every flashcard has a front and a back", () => {
-  const files = readdirSync(join(ROOT, "study"), { recursive: true }).filter((f) => f.endsWith(".tsv"));
-  for (const f of files) {
-    readFileSync(join(ROOT, "study", f), "utf8")
-      .split("\n")
-      .filter((line) => line && !line.startsWith("#"))
-      .forEach((line, i) => assert.equal(line.split("\t").length, 2, `${f}:${i + 1}`));
-  }
-});
-
 test("the marks plugin turns [!contested] into an aside and wraps the Stance", () => {
   const p = (v) => ({ type: "element", tagName: "p", properties: {}, children: [{ type: "text", value: v }] });
   const h2 = (v) => ({ type: "element", tagName: "h2", properties: {}, children: [{ type: "text", value: v }] });

@@ -10,6 +10,10 @@ Every entry has seven parts: the image, Arising, What's new, Contested, Stance, 
 - **Pink boxes are Contested:** cited, but a live proposal or interpretation, with who disagrees.
 - **The gold box is my Stance:** my own reading, kept apart from what the Sources say.
 
+## Entries grow
+
+An entry is published as a first version and revised as I read and rethink, the way the universe it describes keeps growing. Each shows when it was first published and when it last changed.
+
 ## Who makes it
 
 I write every entry. Fact sheets, fact-checks, diagrams and the site itself are made with help from Claude, an AI. Every claim cites a Source I opened.

@@ -60,7 +60,7 @@ A record tier is real when its record encodes the machinery that reads it.
 ## Writing
 
 **Entry**:
-The piece written for one tier. Every entry has the same seven parts.
+The piece written for one tier. Every entry has the same seven parts, and grows: it is first published when there is something to stand behind, then revised.
 _Avoid_: post, article, chapter
 
 **Established**:

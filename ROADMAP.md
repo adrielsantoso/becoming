@@ -13,9 +13,9 @@ One entry for each tier, written bottom up, then the Open questions page brought
 | 5 | Culture | not written yet |
 | 6 | Ω | not written yet |
 
-- **Pace:** one entry a month, about six months in all. Between entries, a short reading note on X about every two weeks, linking back here.
+- **Pace:** as understanding grows. An entry is published once there is a first version worth standing behind, then revised as reading changes it. A short note on X when an entry is published or changes much, linking back here.
 - **Order:** bottom up, so each entry can lean on the one below. Α starts with Fay Dowker's talk.
-- **Done when:** all six are published, and every open question lists the entries that moved it.
+- **Done when:** all six have a first version published, and every open question lists the entries that moved it. Entries keep growing after that.
 
 ## Then: look back
 

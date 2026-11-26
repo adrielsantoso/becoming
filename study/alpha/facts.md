@@ -1,6 +1,6 @@
 # Α: fact sheet
 
-Study notes for the Α entry, made 26 Nov 2026. See [STUDY.md](../../STUDY.md) for how to use them. Every fact below names the Source and where in it the fact is. **E** marks an Established claim, **C** a Contested one.
+Study notes for the Α entry, made 26 Nov 2026. Every fact below names the Source and where in it the fact is. **E** marks an Established claim, **C** a Contested one.
 
 ## The questions
 
@@ -21,7 +21,7 @@ One sitting each, in this order.
 | # | Reading | Length | Look for |
 |---|---|---|---|
 | 1 | ★ Fay Dowker, "Past, Present and Future: The Science of Time" (talk), https://www.youtube.com/watch?v=LAFymPdAg5I | one talk | The whole picture, before any detail. Done 26 Nov; facts below come from its auto-generated transcript, with timestamps. |
-| 2 | Fay Dowker, "The birth of spacetime atoms as the passage of time" (2014), https://arxiv.org/abs/1405.3492 | short paper | Questions 2, 3 and 4. The core of the entry. |
+| 2 | Fay Dowker, "The birth of spacetime atoms as the passage of time" (2014), https://arxiv.org/abs/1405.3492 | short paper | Questions 2, 3 and 4. The core of the entry. Done 26 Nov. |
 | 3 | Fay Dowker, "Causal sets and the deep structure of spacetime" (2005), https://arxiv.org/abs/gr-qc/0508109, §1 to §3.4 | sections | What a causal set is, and "the problem of Now". |
 | 4 | Ellis & Rothman, "Time and Spacetime: The Crystallizing Block Universe" (2010), https://arxiv.org/abs/0912.0808, §1 to §4 | sections | A second, non-causal-set view where the future is open. |
 | 5 | Carlo Rovelli, "Forget time" (2009), https://arxiv.org/abs/0903.3832 | essay | The counterweight: time is not fundamental. |
@@ -90,24 +90,6 @@ Timestamps are from the YouTube video. The transcript is machine-made and garble
 ### A testable bet
 
 - **C** "Everpresent Λ": because volume is a count of elements, it fluctuates, and so does the cosmological constant, by about 1/√V, keeping it always of the order of the ambient density. *Ahmed, Dodelson, Greene & Sorkin 2004, §II.* The heuristic goes back to Sorkin in 1991, before the 1998 measurements of accelerating expansion. *Same paper, refs. 2 and 7.*
-
-## Recall
-
-Answer from memory after each chunk, then open the answer.
-
-<details><summary>Chunk 1: What two words does Dowker pin to the two sides, and who stands on each?</summary>Being (Parmenides, Paul Davies) and becoming (Buddhist dependent origination, John Norton). (Talk, 21:12)</details>
-<details><summary>What is Newton's spacetime made of, and Einstein's?</summary>Newton's: stacked snapshots of space, with one global time. Einstein's: point events, with time only along world lines. (Talk, 26:07 and 35:22)</details>
-<details><summary>Why can general relativity have no "lit spot" marking now?</summary>There would be no way to coordinate one spot on my world line with yours. (Talk, 45:44)</details>
-<details><summary>In asynchronous becoming, what two things are physically real?</summary>The spacetime atoms with their order, and the process of their birth. (Talk, 58:08)</details>
-<details><summary>Chunk 2 and 3: What three properties make a set of elements a causal set?</summary>Transitive, never circular, locally finite. (Dowker 2005, §2.1)</details>
-<details><summary>What two things together give geometry in causal set theory?</summary>Order (causal structure) and number (counting gives volume). (Dowker 2005, §2.3)</details>
-<details><summary>What does Dowker identify with the passage of time?</summary>The birth of spacetime atoms: the present is the process of birth. (Dowker 2014)</details>
-<details><summary>Is the order in which atoms are born physical?</summary>Only where it shows in the causal order; unrelated elements have no physical birth order. Labels are gauge. (Dowker 2014; Rideout & Sorkin 1999)</details>
-<details><summary>What is the "Blockhead" move, and Dowker's reply?</summary>Run growth to infinity and call the result a static block. Reply: that is a different theory, which fits experience less well. (Dowker 2014)</details>
-<details><summary>Chunk 4: What is fixed and what is open in the crystallizing block?</summary>The past is fixed; the future does not yet exist physically; the present is where quantum outcomes become definite. (Ellis & Rothman 2010)</details>
-<details><summary>Chunk 5: What does Rovelli put in place of time?</summary>Relations between variables; time returns only statistically, as thermal time. (Rovelli 2009)</details>
-<details><summary>Chunk 6: Why can a massless universe not keep time?</summary>Massless particles experience no passage of time, so there is nothing to build a clock from. (Penrose 2006)</details>
-<details><summary>Roughly when does Α end?</summary>When the Higgs field takes its value, around 100 GeV, about 2.5 × 10⁻¹¹ s in (worked from PDG eq. 22.44).</details>
 
 ## Connections
 
