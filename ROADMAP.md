@@ -15,6 +15,7 @@ One entry for each tier, written bottom up, then the Open questions page brought
 
 - **Pace:** as understanding grows. An entry is published once there is a first version worth standing behind, then revised as reading changes it. A short note on X when an entry is published or changes much, linking back here.
 - **Order:** bottom up, so each entry can lean on the one below. Α starts with Fay Dowker's talk.
+- **Depth:** Α is the deep tier. Its first version is written like the others, then it grows furthest. The other five get first versions so the ladder stands.
 - **Done when:** all six have a first version published, and every open question lists the entries that moved it. Entries keep growing after that.
 
 ## Then: look back
@@ -23,6 +24,7 @@ Which entries found readers, and which were the most alive to write? The answer 
 
 ## Candidate zoom-ins
 
+- **Α, first:** the origin, account by account. One sub-entry each for causal sets, inflation, the no-boundary universe, the loop quantum cosmology bounce, and Penrose's cyclic cosmology, up to the edge where matter begins.
 - **Matter:** the elements, one by one, from the stars that made them to what we build from them.
 - **Life:** the major transitions.
 - **Mind:** basal cognition, and the bridge from life to mind.

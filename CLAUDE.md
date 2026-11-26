@@ -24,7 +24,7 @@ A public site that tells the universe's story tier by tier, from Α to Ω. Read 
 
 ## Study files
 
-`study/<tier>/facts.md` is the fact sheet. A fact sheet lists only Sources that were actually opened, says where in each Source a fact is, marks each fact E (Established) or C (Contested), and keeps a "Not yet verified" list.
+`study/<tier>/facts.md` is the fact sheet. A fact sheet lists only Sources that were actually opened, says where in each Source a fact is, marks each fact E (Established) or C (Contested), and keeps a "Not yet verified" list. Its Detours section holds background the owner asked about while reading, one block per term, added only when asked, each checked against an opened Source.
 
 ## Commands
 

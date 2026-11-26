@@ -91,6 +91,20 @@ Timestamps are from the YouTube video. The transcript is machine-made and garble
 
 - **C** "Everpresent Λ": because volume is a count of elements, it fluctuates, and so does the cosmological constant, by about 1/√V, keeping it always of the order of the ambient density. *Ahmed, Dodelson, Greene & Sorkin 2004, §II.* The heuristic goes back to Sorkin in 1991, before the 1998 measurements of accelerating expansion. *Same paper, refs. 2 and 7.*
 
+## Detours
+
+Things the readings assume, noted when they came up. Not in textbook order, on purpose. None yet: name a term you met and did not know, and it gets a block here.
+
+<!-- One block per term:
+### Term
+*Met in:* chunk N, §x · *Asked:* date
+
+What it is, in two or three plain sentences.
+
+*Why this reading needs it:* one sentence.
+*One source:* a short, trusted introduction, actually opened.
+-->
+
 ## Connections
 
 - **Down:** Α is open-ended; whether there is an Alpha Point is open question 6. The growth models start from a first element "0", which supports one, but that is a choice of model.
