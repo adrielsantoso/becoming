@@ -25,8 +25,11 @@ One sitting each, in this order.
 | 3 | Fay Dowker, "Causal sets and the deep structure of spacetime" (2005), https://arxiv.org/abs/gr-qc/0508109, §1 to §3.4 | sections | What a causal set is, and "the problem of Now". |
 | 4 | Ellis & Rothman, "Time and Spacetime: The Crystallizing Block Universe" (2010), https://arxiv.org/abs/0912.0808, §1 to §4 | sections | A second, non-causal-set view where the future is open. |
 | 5 | Carlo Rovelli, "Forget time" (2009), https://arxiv.org/abs/0903.3832 | essay | The counterweight: time is not fundamental. |
-| 6 | The edge of Α: Penrose (2006) and the Particle Data Group's "Big-Bang Cosmology" review, §22.3 | two short readings | Where Α ends and matter begins. |
+| 6 | Philipp Höhn & Augustin Vanrietvelde, "How to switch between relational quantum clocks" (2020, New J. Phys.), https://arxiv.org/abs/1810.04153 | paper, about 26 pages; two sittings | A third view of time beside Dowker's and Rovelli's: time as a relation between quantum systems, with no clock outside them. Written for readers new to the problem of time. For question 4. |
+| 7 | Philipp Höhn, "Reflections on the information paradigm in quantum and gravitational physics" (2017), https://arxiv.org/abs/1706.06882 | essay, 23 pages | Spacetime as a "locally finite network" of degrees of freedom exchanging information: the bridge to the causal set of chunk 3. |
+| 8 | The edge of Α: Penrose (2006) and the Particle Data Group's "Big-Bang Cosmology" review, §22.3 | two short readings | Where Α ends and matter begins. |
 | + | Optional: Rideout & Sorkin (1999), Krioukov et al. (2012), Ahmed et al. (2004) | dip in | The growth rules; an image; the one testable prediction. |
+| + | Optional: Höhn, "Switching internal times and a new perspective on the 'wave function of the universe'" (2019), https://arxiv.org/abs/1811.00611 | paper, 14 pages; after chunk 6 | The clock idea applied to a model of the whole universe: the Höhn reading closest to the origin. |
 
 ## Facts
 
