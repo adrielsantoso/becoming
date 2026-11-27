@@ -54,6 +54,7 @@ Path so far: pantheism → panentheism → process → growing block.
 ## 5. Counterweights (views that disagree)
 
 - [ ] **Carlo Rovelli, *The Order of Time*** (book, 2018). Readable case that time and becoming are less fundamental than they feel.
+  - Optional, beside it: **Carlo Rovelli, *On the Equality of All Things*** (book, 2026). Not about time. Argues that everything exists only in relation to everything else, through relational quantum mechanics. Close kin to Höhn's relational clocks (Α chunk 6). Per Adam Frank's NPR review (14 Sept 2026), it brushes aside Bergson's lived time, a gap for a tier about becoming.
 - [ ] **Ladyman's attack on armchair metaphysics** (*Every Thing Must Go*, ch. 1). The test the Ω ideas need to pass.
 
 ---
