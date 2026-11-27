@@ -97,7 +97,39 @@ Timestamps are from the YouTube video. The transcript is machine-made and garble
 
 ## Detours
 
-Things the readings assume, noted when they came up. Not in textbook order, on purpose. None yet: name a term you met and did not know, and it gets a block here.
+Things the readings assume, noted when they came up. Not in textbook order, on purpose. Name a term you met and did not know, and it gets a block here.
+
+### Lorentzian manifold
+*Met in:* chunk 3, §2.3 · *Asked:* 27 Nov 2026
+
+A manifold is a space that may be curved overall but looks like ordinary flat space in any small patch, the way Earth's surface looks flat from a field. A metric is a rule that gives the distance, or the time, between nearby points. It is Lorentzian when exactly one direction, time, carries the opposite sign from the others. That one sign is what makes light cones. A region's 4-volume is ∫ √(−g) d⁴x: d⁴x is a tiny coordinate box, √(−g) converts it to true volume (g is the metric's determinant, which is negative for a Lorentzian metric), and the integral adds the boxes up. The answer does not depend on the coordinates.
+
+*Why this reading needs it:* §2.3 discretises a Lorentzian manifold, and the number of elements in a region tracks this volume.
+*One source:* S. Carroll, *Lecture Notes on General Relativity* (arXiv gr-qc/9712019), §1 (the minus sign and the name "Lorentzian") and §2 (manifolds; the volume element, eq. 2.48).
+
+### Causal curve and the causal past J⁻(p)
+*Met in:* chunk 3, §2.3 · *Asked:* 27 Nov 2026
+
+A curve's tangent vector is its direction of travel at each moment. A path is timelike where it goes slower than light, null where it goes exactly at light speed, and spacelike where it would go faster. A causal curve is never spacelike: something could actually travel along it. J⁻(p), the causal past of p, is every point q from which a causal curve reaches p: everything that could have influenced p. J⁺(p), the causal future, is the reverse. q ∈ J⁻(p) reads "q is in the causal past of p". These sets are the light cones of p and their insides.
+
+*Why this reading needs it:* the order on a causal set is copied from these sets. e_i ≺ e_j means e_i was sprinkled at a point in the causal past of e_j's point.
+*One source:* Carroll, *Lecture Notes on General Relativity*, §1 (light cones; timelike, null and spacelike separation; the tangent vector of a path).
+
+### Poisson process
+*Met in:* chunk 3, §2.3 · *Asked:* 27 Nov 2026
+
+A way of placing points at random with two rules. Points land independently of each other. The number in any region is random, with an average fixed by the region's size. If that average is N, the chance of finding exactly n points is Nⁿ e^(−N) / n!. So even a region "worth" 2 elements is empty about 14% of the time (e^(−2) ≈ 0.135).
+
+*Why this reading needs it:* sprinkling is a Poisson process with N equal to the region's volume in fundamental units. Its randomness is what keeps it the same for every observer, where a grid is not.
+*One source:* Wikipedia, "Poisson point process", the section on the homogeneous process (opened 27 Nov 2026). The 14% is my calculation from its formula.
+
+### Units with c = 1, and the Planck length
+*Met in:* chunk 3, §2.3 · *Asked:* 27 Nov 2026
+
+Setting c = 1 means measuring time and distance in matching units, such as seconds and light-seconds. Light then moves one unit of distance per unit of time, and c drops out of the formulas. G is Newton's gravitational constant and ħ is Planck's constant divided by 2π. Dowker's Planck length is l_p = √(κħ) with κ = 8πG. With c put back it is √(8πGħ/c³) ≈ 8.1 × 10⁻³⁵ m, about five times the more common √(Għ/c³) ≈ 1.6 × 10⁻³⁵ m. The fundamental volume is V_f = ν l_p⁴, a 4-volume (length³ × time, and time is a length once c = 1), with ν a number near 1 that nobody knows yet.
+
+*Why this reading needs it:* the Planck length sets how fine the grain of spacetime is, and V_f is what one element is worth.
+*One source:* Carroll, *Lecture Notes on General Relativity*, §1, eq. 1.6 (c = 1). The definition of l_p is Dowker 2005, §2.3. The metre values are my calculation from standard constants.
 
 <!-- One block per term:
 ### Term
@@ -152,3 +184,5 @@ Venkatesa Chandrasekaran, arXiv:2611.34924, posted 25 Nov 2026. Sole author, 54 
 7. K.A. Olive and J.A. Peacock, "Big-Bang Cosmology", in Particle Data Group, *Review of Particle Physics* (2024), §22. Read §22.3 and §22.4.1.
 8. Dmitri Krioukov et al., "Network Cosmology", *Scientific Reports* 2, 793 (2012), arXiv:1203.2109. Read §II.
 9. Ahmed, Dodelson, Greene and Sorkin, "Everpresent Λ", *Phys. Rev. D* 69, 103523 (2004), arXiv:astro-ph/0209274. Read §II and §V.
+10. Sean M. Carroll, *Lecture Notes on General Relativity* (1997), arXiv:gr-qc/9712019. Read §1 (light cones, paths, c = 1) and the parts of §2 on manifolds, metric signature and the volume element. For Detours.
+11. Wikipedia, "Poisson point process", the section on the homogeneous process (opened 27 Nov 2026). For Detours.
