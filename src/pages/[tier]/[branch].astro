@@ -1,0 +1,60 @@
+---
+import { render } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import { branches, ladder, shown, url, type Branch, type Entry } from "../../lib/entries";
+
+export async function getStaticPaths() {
+  const tiers = new Map((await ladder()).map((e) => [e.id, e]));
+  return [...(await branches())].flatMap(([id, list]) => {
+    const tier = tiers.get(id)!;
+    // A branch is read from its tier, so it shows only once its tier does.
+    if (!shown(tier)) return [];
+    const live = list.filter(shown);
+    return live.map((branch, i) => ({
+      params: { tier: id, branch: branch.id.split("/")[1] },
+      props: {
+        branch,
+        tier,
+        before: live[i - 1],
+        after: live[i + 1],
+        marked: branch.data.leftMarkOn.map((m) => tiers.get(m.id)!),
+      },
+    }));
+  });
+}
+
+interface Props { branch: Branch; tier: Entry; before?: Branch; after?: Branch; marked: Entry[] }
+const { branch, tier, before, after, marked } = Astro.props;
+const { Content } = await render(branch);
+const d = branch.data;
+const day = (t: Date) => t.toISOString().slice(0, 10);
+const href = (e: Entry | Branch) => url(`${e.id}/`);
+---
+<Base title={`${d.name} · ${tier.data.name}`} description={d.line}>
+  <article class="entry prose">
+    <header>
+      <p class="tier">Branch of <a href={href(tier)}>{tier.data.name}</a>, tier {tier.data.order} of 6</p>
+      <h1>{d.name}</h1>
+      <p class="lede">
+        {d.line}
+        {d.published && <> · first published <time datetime={day(d.published)}>{day(d.published)}</time></>}
+        {d.updated && <> · updated <time datetime={day(d.updated)}>{day(d.updated)}</time></>}
+        {d.status === "draft" && <span class="status">draft</span>}
+      </p>
+      {marked.length > 0 && (
+        <p class="marks">
+          Left its mark on{" "}
+          {marked.map((e, i) => (
+            <>{i > 0 && ", "}{shown(e) ? <a href={href(e)}>{e.data.name}</a> : e.data.name}</>
+          ))}
+        </p>
+      )}
+    </header>
+    <Content />
+    <nav class="near" aria-label={`Neighbouring branches of ${tier.data.name}`}>
+      {before ? <a href={href(before)}>← {before.data.name}</a> : <span />}
+      <a href={href(tier)}>{tier.data.name} ↑</a>
+      {after ? <a href={href(after)}>{after.data.name} →</a> : <span />}
+    </nav>
+  </article>
+</Base>

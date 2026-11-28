@@ -85,3 +85,24 @@ ul.tasks, .prose ul:has(input) { list-style: none; padding-left: 0; }
   h1 { font-size: 1.6rem; }
   .rung { padding: 12px; }
 }
+
+/* Branches grow sideways from their tier, as twigs off the rung. */
+.twigs { list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px 14px; }
+.rung .twigs { grid-column: 2; }
+.twig { display: flex; align-items: baseline; gap: 6px; font-size: 0.9rem; }
+.twig::before { content: ""; align-self: center; width: 12px; border-top: 1px solid var(--line); }
+.twig a, .twig > span:first-child { font-family: var(--mono); color: var(--fg); }
+.twig a { text-decoration-color: var(--line); }
+.twig a:hover { text-decoration-color: currentColor; }
+.twig .state { font-family: var(--mono); font-size: 0.75rem; color: var(--muted); }
+.twig.lit::before { border-color: var(--cyan); }
+.twig.lit a { color: var(--cyan); }
+.twig.dim > :first-child { opacity: 0.55; }
+
+/* A tier's page lists its branches, one to a line. */
+.grown { margin-top: 48px; padding-top: 16px; border-top: 1px solid var(--line); }
+.grown .mark, .marks { font-family: var(--mono); font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+.grown .mark { margin: 0 0 8px; }
+.grown .twigs { flex-direction: column; gap: 6px; }
+.grown .twig .line { color: var(--muted); }
+.marks { margin: 8px 0 0; }

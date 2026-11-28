@@ -15,6 +15,10 @@ The six tiers in order, from Α at the bottom to Ω at the top.
 One level of the ladder, with its own kind of thing. There are six: Α, matter, life, mind, culture and Ω.
 _Avoid_: rung, span, level, layer, stage
 
+**Branch**:
+A part of a tier that grows sideways from it, made of that tier's own kind of thing, with no new kind of thing in it: stars in matter, ecosystems in life. Each branch belongs to one tier and has its own entry. A branch may leave its mark on another tier, and its entry says which.
+_Avoid_: stage, sub-tier, offshoot
+
 **Open-ended**:
 Said of a tier with no known outer edge. Α and Ω are open-ended.
 
@@ -60,7 +64,7 @@ A record tier is real when its record encodes the machinery that reads it.
 ## Writing
 
 **Entry**:
-The piece written for one tier. Every entry has the same seven parts, and grows: it is first published when there is something to stand behind, then revised.
+The piece written for one tier or one branch. Every entry has the same seven parts, and grows: it is first published when there is something to stand behind, then revised.
 _Avoid_: post, article, chapter
 
 **Established**:

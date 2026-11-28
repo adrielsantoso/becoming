@@ -1,8 +1,9 @@
 ---
 import Base from "../layouts/Base.astro";
-import { ladder, shown, url } from "../lib/entries";
+import { branches, ladder, shown, url } from "../lib/entries";
 
 const rungs = (await ladder()).reverse();
+const grown = await branches();
 const label = (e: (typeof rungs)[number]) =>
   e.data.title === e.data.name ? e.data.name : `${e.data.title} · ${e.data.name}`;
 const first = rungs.find((e) => e.data.order === 1)!;
@@ -35,6 +36,19 @@ const written = rungs.filter((e) => e.data.status === "published").length;
           <span class="line">
             {e.data.line} <span class="state">{lit ? "" : `· ${e.data.status === "draft" ? "draft" : "not written yet"}`}</span>
           </span>
+          {(grown.get(e.id) ?? []).length > 0 && (
+            <ul class="twigs" aria-label={`Branches of ${e.data.name}`}>
+              {grown.get(e.id)!.map((b) => {
+                const twigLit = b.data.status === "published";
+                return (
+                  <li class:list={["twig", twigLit ? "lit" : "dim"]}>
+                    {live && shown(b) ? <a href={url(`${b.id}/`)}>{b.data.name}</a> : <span>{b.data.name}</span>}
+                    {!twigLit && <span class="state">{b.data.status === "draft" ? "draft" : "not written yet"}</span>}
+                  </li>
+                );
+              })}
+            </ul>
+          )}
         </li>
       );
     })}

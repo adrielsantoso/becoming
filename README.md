@@ -7,7 +7,8 @@ The universe becoming, told tier by tier from Α to Ω, grounded in what we know
 - [QUESTIONS.md](QUESTIONS.md) and [READING.md](READING.md): the open questions and the reading list.
 - [STUDY.md](STUDY.md): how entries are read for, written and revised.
 - `src/content/entries/`: one Markdown file for each tier.
-- `study/`: fact sheets, one folder per tier.
+- `src/content/branches/`: one folder per tier, one Markdown file for each branch.
+- `study/`: fact sheets, one folder per tier, with a subfolder for each branch.
 
 ## Commands
 

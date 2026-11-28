@@ -20,11 +20,11 @@ A public site that tells the universe's story tier by tier, from Α to Ω. Read 
 
 ## Entries
 
-`src/content/entries/<tier>.md`, with `status` set to `idea`, `draft` (only `npm run dev` shows it) or `published` (needs a `published` date). Entries grow: when a published entry is revised, set `updated` to that day. Publishing an entry also means updating the "Moved by" list in `QUESTIONS.md` and the table in `ROADMAP.md`.
+`src/content/entries/<tier>.md` for a tier and `src/content/branches/<tier>/<branch>.md` for a branch, with `status` set to `idea`, `draft` (only `npm run dev` shows it) or `published` (needs a `published` date). Entries grow: when a published entry is revised, set `updated` to that day. Publishing an entry also means updating the "Moved by" list in `QUESTIONS.md`, and for a tier the table in `ROADMAP.md`. A branch has the same seven parts, belongs to one tier, and is published only once its tier is.
 
 ## Study files
 
-`study/<tier>/facts.md` is the fact sheet. A fact sheet lists only Sources that were actually opened, says where in each Source a fact is, marks each fact E (Established) or C (Contested), and keeps a "Not yet verified" list. Its Detours section holds background the owner asked about while reading, one block per term, added only when asked, each checked against an opened Source.
+`study/<tier>/facts.md` is the fact sheet, and `study/<tier>/<branch>/facts.md` a branch's. A fact sheet lists only Sources that were actually opened, says where in each Source a fact is, marks each fact E (Established) or C (Contested), and keeps a "Not yet verified" list. Its Detours section holds background the owner asked about while reading, one block per term, added only when asked, each checked against an opened Source.
 
 ## Commands
 

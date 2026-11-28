@@ -1,4 +1,4 @@
-import { defineCollection } from "astro:content";
+import { defineCollection, reference } from "astro:content";
 import { glob } from "astro/loaders";
 import { z } from "astro/zod";
 
@@ -27,4 +27,29 @@ const entries = defineCollection({
     }),
 });
 
-export const collections = { entries };
+// A branch grows sideways from one tier: src/content/branches/<tier>/<branch>.md.
+// Its tier is the folder it sits in. See GLOSSARY.md.
+const branches = defineCollection({
+  loader: glob({ pattern: "*/*.md", base: "./src/content/branches" }),
+  schema: z
+    .object({
+      name: z.string(),
+      // Where the branch sits along its tier, from 1.
+      order: z.number().int().min(1),
+      line: z.string(),
+      // Other tiers this branch has left its mark on.
+      leftMarkOn: z.array(reference("entries")).default([]),
+      status: z.enum(["idea", "draft", "published"]),
+      published: z.coerce.date().optional(),
+      updated: z.coerce.date().optional(),
+      readings: z.array(z.string()).default([]),
+    })
+    .refine((e) => e.status !== "published" || e.published, {
+      message: "a published branch needs its published date",
+    })
+    .refine((e) => !e.updated || (e.published && e.updated >= e.published), {
+      message: "updated must be on or after published",
+    }),
+});
+
+export const collections = { entries, branches };
